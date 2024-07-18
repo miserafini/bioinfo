@@ -24,5 +24,5 @@ while IFS= read -r srafile; do
 done < SRR_Acc_List1.txt
 
 
-# duration=$SECONDS
-# echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
+duration=$SECONDS
+echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
