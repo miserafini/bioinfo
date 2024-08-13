@@ -1,4 +1,3 @@
-
 #!/bin/sh
 #SBATCH -J star_align            
 #SBATCH --time=40:00:00 
