@@ -11,7 +11,15 @@ GTF_FILE=/scratch/hpc/07/serafini/genome/gencode.v29.annotation.gtf
 
 
 # Initialise the environment modules
-module load star
+module load star/2.7.10a 
 
 # Execute your program
-STAR --runThreadN 16 --runMode genomeGenerate --genomeDir $GENOME_DIR --genomeFastaFiles $GENOME_FASTA_FILE --sjdbGTFfile $GTF_FILE --sjdbOverhang 100
+# Run STAR alignment
+STAR --runThreadN 16 \
+	 --runMode genomeGenerate \
+	 --genomeDir $GENOME_DIR \
+	 --genomeFastaFiles $GENOME_FASTA_FILE \
+	 --sjdbGTFfile $GTF_FILE \
+	 --sjdbOverhang 100
+done
+
