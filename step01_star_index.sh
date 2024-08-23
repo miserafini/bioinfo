@@ -20,4 +20,5 @@ STAR --runThreadN 8 \
 	 --genomeDir $GENOME_DIR \
 	 --genomeFastaFiles $GENOME_FASTA_FILE \
 	 --sjdbGTFfile $GTF_FILE \
-	 --sjdbOverhang 100
+	 --sjdbOverhang 100 \
+	 --limitGenomeGenerateRAM 63000000000
