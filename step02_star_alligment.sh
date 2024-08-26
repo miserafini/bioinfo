@@ -4,10 +4,8 @@
 # Inputs:
 # Directory containing your fastq files
 FASTQ_DIR="/scratch/hpc/07/serafini/fastq"
-
 # Output directory for aligned files
 OUTPUT_DIR="/scratch/hpc/07/serafini/genome/alligned"
-
 # Path to the STAR genome index
 STAR_INDEX="/scratch/hpc/07/serafini/genome"
 
