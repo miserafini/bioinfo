@@ -1,4 +1,9 @@
 #!/bin/bash
+#SBATCH -J star_index_2          
+#SBATCH --time=40:00:00 
+#SBATCH --partition=parallel
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=64G
 #Loop for STAR allignment
 
 # Inputs:
