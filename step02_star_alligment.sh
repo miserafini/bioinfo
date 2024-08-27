@@ -30,6 +30,7 @@ for f in "$FASTQ_DIR"/*/; do
     # Run STAR alignment
     STAR --genomeDir ${STAR_INDEX} \
          --readFilesIn ${fastq_file} \
+	 --readFilesCommand zcat \
          --outFileNamePrefix ${OUTPUT_DIR}/${sample_id_lower}_ \
          --outSAMtype BAM SortedByCoordinate \
          --runThreadN 8
